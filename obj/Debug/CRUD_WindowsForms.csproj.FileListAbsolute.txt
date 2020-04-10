@@ -1,0 +1,17 @@
+C:\Users\Casa\source\repos\CRUD_WindowsForms\bin\Debug\CRUD_WindowsForms.exe.config
+C:\Users\Casa\source\repos\CRUD_WindowsForms\bin\Debug\CRUD_WindowsForms.exe
+C:\Users\Casa\source\repos\CRUD_WindowsForms\bin\Debug\CRUD_WindowsForms.pdb
+C:\Users\Casa\source\repos\CRUD_WindowsForms\bin\Debug\MySql.Data.dll
+C:\Users\Casa\source\repos\CRUD_WindowsForms\bin\Debug\Google.Protobuf.dll
+C:\Users\Casa\source\repos\CRUD_WindowsForms\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Casa\source\repos\CRUD_WindowsForms\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Casa\source\repos\CRUD_WindowsForms\bin\Debug\Renci.SshNet.dll
+C:\Users\Casa\source\repos\CRUD_WindowsForms\bin\Debug\MySql.Data.xml
+C:\Users\Casa\source\repos\CRUD_WindowsForms\obj\Debug\CRUD_WindowsForms.csprojAssemblyReference.cache
+C:\Users\Casa\source\repos\CRUD_WindowsForms\obj\Debug\CRUD_WindowsForms.frmInicial.resources
+C:\Users\Casa\source\repos\CRUD_WindowsForms\obj\Debug\CRUD_WindowsForms.Properties.Resources.resources
+C:\Users\Casa\source\repos\CRUD_WindowsForms\obj\Debug\CRUD_WindowsForms.csproj.GenerateResource.cache
+C:\Users\Casa\source\repos\CRUD_WindowsForms\obj\Debug\CRUD_WindowsForms.csproj.CoreCompileInputs.cache
+C:\Users\Casa\source\repos\CRUD_WindowsForms\obj\Debug\CRUD_WindowsForms.csproj.CopyComplete
+C:\Users\Casa\source\repos\CRUD_WindowsForms\obj\Debug\CRUD_WindowsForms.exe
+C:\Users\Casa\source\repos\CRUD_WindowsForms\obj\Debug\CRUD_WindowsForms.pdb
