@@ -116,5 +116,66 @@ namespace CRUD_WindowsForms
                 }
             }
         }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            txtId.Visible = true;
+            txtId.Focus();
+            if (txtId.TextLength == 0)
+            {
+                MessageBox.Show("Preencha o campo ID para realizar a exclusão");
+            }
+            else
+            {
+                try
+                {
+                    string strSql = "DELETE from clientes WHERE id=@id ";
+                    ConexaoBd con = new ConexaoBd(strSql);
+                    con.Comando.Parameters.AddWithValue("@id", MySqlDbType.Int32).Value = txtId.Text;
+                    con.Comando.ExecuteNonQuery();
+                    con.FecharConexao();
+                    MessageBox.Show("Exclusão efetuada com sucesso!");
+                    LimparForm();
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show("Erro na exclusão do cadastro: " + erro.Message);
+                    LimparForm();
+                    txtId.Focus();
+                }
+            }
+        }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                string strSql = "SELECT * from clientes";
+                ConexaoBd con = new ConexaoBd(strSql);
+                MySqlDataReader dr = con.Comando.ExecuteReader();
+
+                int i = 0;
+
+                while (dr.Read())
+
+                {
+
+                    dgvLista.Rows.Add();
+                    dgvLista.Rows[i].Cells["id"].Value = Convert.ToString(dr["id"]);
+                    dgvLista.Rows[i].Cells["nome"].Value = Convert.ToString(dr["nome"]);
+                    dgvLista.Rows[i].Cells["datanasc"].Value = Convert.ToString(dr["datanasc"]);
+                    dgvLista.Rows[i].Cells["email"].Value = Convert.ToString(dr["email"]);
+                    dgvLista.Rows[i].Cells["telefone"].Value = Convert.ToString(dr["telefone"]);
+                    i++;
+                }
+                con.FecharConexao();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro --> " + erro.Message);
+            }
+        }
     }
 }

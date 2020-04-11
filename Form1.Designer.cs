@@ -42,6 +42,12 @@
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.txtDataNasc = new System.Windows.Forms.MaskedTextBox();
             this.txtId = new System.Windows.Forms.TextBox();
+            this.btnListar = new System.Windows.Forms.Button();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datanasc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,6 +79,7 @@
             this.btnExcluir.TabIndex = 8;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnBuscar
             // 
@@ -87,6 +94,13 @@
             // dgvLista
             // 
             this.dgvLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.nome,
+            this.datanasc,
+            this.email,
+            this.telefone});
+            this.dgvLista.GridColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvLista.Location = new System.Drawing.Point(5, 147);
             this.dgvLista.Name = "dgvLista";
             this.dgvLista.Size = new System.Drawing.Size(324, 150);
@@ -171,11 +185,47 @@
             this.txtId.TabIndex = 0;
             this.txtId.Visible = false;
             // 
+            // btnListar
+            // 
+            this.btnListar.Location = new System.Drawing.Point(250, 310);
+            this.btnListar.Name = "btnListar";
+            this.btnListar.Size = new System.Drawing.Size(75, 23);
+            this.btnListar.TabIndex = 9;
+            this.btnListar.Text = "Listar";
+            this.btnListar.UseVisualStyleBackColor = true;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
+            // 
+            // id
+            // 
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            // 
+            // nome
+            // 
+            this.nome.HeaderText = "nome";
+            this.nome.Name = "nome";
+            // 
+            // datanasc
+            // 
+            this.datanasc.HeaderText = "datanasc";
+            this.datanasc.Name = "datanasc";
+            // 
+            // email
+            // 
+            this.email.HeaderText = "email";
+            this.email.Name = "email";
+            // 
+            // telefone
+            // 
+            this.telefone.HeaderText = "telefone";
+            this.telefone.Name = "telefone";
+            // 
             // frmInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 363);
+            this.Controls.Add(this.btnListar);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtDataNasc);
             this.Controls.Add(this.txtTelefone);
@@ -216,6 +266,12 @@
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.MaskedTextBox txtDataNasc;
         private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.Button btnListar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datanasc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefone;
     }
 }
 
